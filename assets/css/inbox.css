@@ -1,0 +1,114 @@
+html, body{
+    height: 100%;
+    background: #f7f7ff;
+}
+body{
+    padding-bottom: 20px;
+    overflow: hidden !important; 
+}
+#inbox{
+    border: 1px solid #e7e7e7;
+    margin: 20px;
+    background: #ffffff;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.grid-col-2 .col-left{
+    border-right: 1px solid #e7e7e7;
+    height: 100%;
+}
+
+.grid-col-2 .col-left .head{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px;
+}
+
+.grid-col-2 .col-left .contact-list{
+    height: 850px;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+}
+
+.center-xy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.position-relative{ position: relative; }
+
+.contact-list > ul > li{ padding: 15px; border-bottom: 1px solid #e7e7e7; }
+.contact-list > ul > li:hover{ background: #eee; cursor: pointer; }
+
+.conversation-header{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 11px 15px;
+}
+.conversation-header .username{
+    margin: 0;
+}
+.online{ color: #00b22d !important; }
+.text-sm{ font-size: 11px; }
+
+.about-user-col{ height: 100%; border-left: 1px solid #e7e7e7; }
+.about-user-col .thumbnail{ border: 0; }
+
+.grid-inner-container {
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+
+.grid-inner-container .chat-box{
+    border-right: 1px solid #e7e7e7;
+    height: 90.5vh;
+}
+
+.chat-form{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.btn-flat{ border: 0; }
+.no-radius{ border-radius: 0; }
+
+.chat-histories{
+    height: calc(100% - 130px );
+    overflow: hidden;
+    overflow-y: auto !important;
+}
+
+.chat-histories .message{
+    padding: 15px;   
+}
+.chat-histories .message:hover{ background: #eee; }
+.no-border{ border: 0; }
+
+/* create offer section */
+.service-area {
+    border-bottom: 1px solid #ddd;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.service-area ul {
+    width: 677px;
+    height: 292px;
+}
+.service-area .service-item {
+    height: 93px;
+}
+.service-area .service-item a {
+    text-decoration: none;
+    color: grey;
+    opacity: 0;
+}
+.service-item .service h4 {
+    line-height: 2.5em;
+    padding-left: 10px;
+}
